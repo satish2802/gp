@@ -3,7 +3,49 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=1200">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* Basic responsive fixes */
+@media (max-width: 768px) {
+  /* Our Story section */
+  .our-story-container {
+     flex-direction: column !important;
+     text-align: center !important;
+  }
+  .our-story-container img {
+     margin-bottom: 20px;
+     width: 90% !important;
+  }
+
+  /* Services grid */
+  .services-section {
+     display: grid !important;
+     grid-template-columns: 1fr !important;
+  }
+
+  /* Timeline vertical stack */
+  .timeline-item {
+     width: 100% !important;
+     margin: 0 !important;
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+  }
+
+  /* Carousel text scale */
+  .carousel-caption h3,
+  .carousel-caption p {
+     font-size: 1.2rem !important;
+  }
+
+  /* Navbar brand */
+  .navbar-brand h1 {
+     font-size: 1.4rem !important;
+  }
+}
+</style>
+
     <title>GRAVITY POWERTECH</title>
     <link rel="icon" type="jpg" href="static/img/icongp.png">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -659,6 +701,5 @@
 
 
 </body>
-
 
 </html>

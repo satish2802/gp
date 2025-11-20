@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1200">
+    <title>GRAVITY POWERTECH</title>
+    <link rel="icon" type="jpg" href="static/img/page-2.jpg">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+
+
+<!-- Whatsapp -->
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        /* Change to right: 20px if you prefer */
+        z-index: 9999;
+        background-color: #25D366;
+        color: white;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 32px;
+        line-height: 60px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        .whatsapp-float {
+            left: auto;
+            right: 20px;
+        }
+    }
+</style>
+
+<a href="https://wa.me/+919719966289?text=Hi%2C%20I%20want%20to%20buy%20your%20Product." class="whatsapp-float"
+    target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<!-- Topbar Start -->
+<div class="container-fluid bg-light d-none d-lg-block border-bottom shadow-sm">
+    <div class="row py-2 px-lg-5">
+        <!-- Left Side -->
+        <div class="col-lg-6 text-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center text-dark small">
+                <span class="mr-3">
+                    <i class="fa fa-phone-alt mr-2 text-primary"></i> +91-9205983794
+                </span>
+                <span>
+                    <i class="fa fa-envelope mr-2 text-primary"></i> gravitypowertech@gmail.com
+                </span>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-lg-6 text-right">
+            <div class="d-inline-flex align-items-center">
+                <a class="px-2" href="" style="color:#3b5998;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="px-2" href="" style="color:#1da1f2;">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="px-2" href="" style="color:#0077b5;">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="px-2" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer" style="color:#e1306c;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="pl-2" href="" style="color:#ff0000;">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+        <img src="static/img/page-2.jpg" alt="Company Logo"
+            style="border-radius: 6px;height: 60px; width: auto; margin-right: 10px;">
+        <h1 class="m-0 text-primary">
+            <span class="text-dark">Gravity</span> Powertech
+        </h1>
+
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <Skinn class="navbar-toggler-icon"></Skinn>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <!--                 <a href="{% url 'homepage' %}"class="nav-item nav-link {% if request.path == '/' %}active{% endif %}">Home</a> -->
+                <!--                 <a href="index.html" class="nav-item nav-link active">Home</a> -->
+                <a href="./index.html" class="nav-item nav-link active">Home</a>
+
+
+                <!--                 <a href="{% url 'products' %}" class="nav-item nav-link">Products</a> -->
+                <a href="#products" class="nav-item nav-link">Products & Services</a>
+                <a href="#whyus" class="nav-item nav-link">Why Us</a>
+                <!-- <a href="{% url 'price' %}" class="nav-item nav-link">Pricing</a> -->
+                <!--                 <div class="nav-item dropdown"> -->
+                <!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a> -->
+                <!-- <div class="dropdown-menu rounded-0 m-0">
+                            <a href="appointment.html" class="dropdown-item">Appointment</a>
+                            <a href="opening.html" class="dropdown-item">Open Hours</a>
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div> -->
+                <!--                 </div> -->
+                <!--                 <a href="{% url 'contacts' %}" class="nav-item nav-link ">Contacts</a> -->
+                <a href="#contactus" class="nav-item nav-link ">Contact</a>
+            </div>
+            <!-- <a href="" class="btn btn-primary d-none d-lg-block">Book Now</a> -->
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+
+
+<body>
+
+
+
+
+
+
+    <!-- Carousel Start -->
+
+
+    <div class="container-fluid p-0 mb-5 pb-0">
+
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- Google Fonts link add karo head me -->
+                <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
+                    rel="stylesheet">
+
+                <div class="carousel-item position-relative active" style="min-height: 70vh;">
+
+                    <img class="position-absolute w-100 h-100" src="static/img/2s.jpg" style="object-fit: cover;">
+
+
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+
+                            <h6 class="text-uppercase mb-3 animate__animated animate__fadeInDown"
+                                style="letter-spacing: 3px;  color: antiquewhite;">The Future Of Power</h6>
+
+                            <h3 style="font-family: 'Cinzel', serif;
+                                font-size: 3.2rem;font-weight: 600;letter-spacing: 0.25em;text-transform: uppercase;
+                                color: #f5f5f5 !important;text-shadow: 2px 2px 5px rgba(0,0,0,0.8);text-align: center;
+                                margin-bottom: 0.5rem;">Gravity Powertech
+                            </h3>
+
+
+                            <p class="mb-5" style="font-family: 'Playfair Display', serif;
+                                color: antiquewhite;
+                                font-size: 2rem; font-style: italic; margin-left: 0;">
+                                Stable Power. Steady Performance
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item position-relative" style="min-height: 70vh;">
+                    <img class="position-absolute w-100 h-100" src="static/img/6s.jpg">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h6 class="text-uppercase mb-3 animate__animated animate__fadeInDown"
+                                style="letter-spacing: 3px;  color: rgb(247, 250, 215);">The Future Of Power</h6>
+                            <h3 class="display-4 text-capitalize mb-5" style="
+        font-family: 'Cinzel', serif;
+        color: #ffffff !important;
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.9);
+        text-align: center;
+        margin-bottom: 0.5rem;
+        letter-spacing: 2px;
+    ">
+                                Stabilizers: Steady Power, Always Safe
+                            </h3>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="min-height: 70vh;">
+                    <!-- <img class="position-absolute w-100 h-100" src="static/img/166.jpg" style="object-fit: contain;"> -->
+                    <div style="display: flex; gap: 0px; height: 70vh;">
+                        <img src="static/img/rr.png" style="width: 33.33%; height: 100%; object-fit: cover;">
+                        <img src="static/img/qq.png" style="width: 33.33%; height: 100%; object-fit: cover;">
+                        <img src="static/img/ww.png" style="width: 33.33%; height: 100%; object-fit: cover;">
+                    </div>
+
+
+
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h6 class="text-uppercase mb-3 animate__animated animate__fadeInDown"
+                                style="letter-spacing: 3px;  color: antiquewhite;">The Future Of Power</h6>
+
+                            <h3 class="display-4 text-capitalize mb-5">
+                                <a href="products.html?tab=product2" class="text-white text-decoration-none"
+                                    data-bs-toggle="pill" role="tab" id="product2" aria-selected="true" style="cursor: pointer;
+                                    font-family: 'Cinzel', serif;color:#f5f5f5 !important;text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);;
+                                    text-align: center;margin-bottom: 0.5rem;">
+                                    We are into Solar Panels
+                                </a>
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Our Story Start -->
+    <div style="display: flex; align-items: center; gap: 4rem; padding: 4rem 3rem; 
+           background-color: #C7EDCC; 
+           background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)); /* subtle dark overlay */
+           border-radius: 20px; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15); 
+           color: #1B3B1B; font-family: 'Segoe UI', sans-serif;">
+
+        <!-- Image Section -->
+        <div style="flex-shrink: 0; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s ease;">
+            <img src="static/img/aboutus.jpg" alt="Gravity Powertech"
+                style="width: 280px; height: auto; object-fit: cover; display: block; border-radius: 15px; transition: transform 0.3s ease;"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+
+        <!-- Text Section -->
+        <div style="flex: 1;">
+            <h5 style="font-size: 1.1rem; color: #2B5F2B; margin-bottom: 0.5rem;">
+                Welcome to <strong style="color: #0D290D;">Gravity Powertech</strong>: Powering Homes. Powering
+                Progress.
+            </h5>
+
+            <h2 style="font-size: 2.4rem; color: #0D290D; font-weight: 700; margin-bottom: 1rem;">Our Story</h2>
+
+            <p style="font-size: 1.05rem; color: #1B3B1B; line-height: 1.8; margin-bottom: 1.2rem;">
+                Gravity Powertech is a Gujarat-based company dedicated to delivering reliable and sustainable energy
+                solutions.
+                We specialize in solar panel installation, solar maintenance and services, and high-quality Stabilizers
+                manufacturing.
+                With a commitment to innovation and customer satisfaction, we bring clean energy solutions to homes,
+                businesses,
+                and industries across India.
+                <br><br>
+                Our mission is to make renewable energy accessible, efficient, and long-lasting. With years of
+                experience and a
+                team of expert engineers, Gravity Powertech ensures top-notch installation quality, premium components,
+                and timely
+                support — all backed by a trusted legacy of power excellence.
+            </p>
+
+            <ul style="color: #1B3B1B; padding-left: 1.5rem; font-size: 1.05rem; line-height: 1.7;">
+                <li><strong>Specialists in Solar Installation & Maintenance Services</strong></li>
+                <li><strong>Manufacturers of reliable and high-performance Stabilizers</strong></li>
+                <li><strong>Committed to delivering sustainable and cost-effective energy solutions</strong></li>
+                <li><strong>Trusted by thousands across Gujarat and other Indian states</strong></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- our Product start -->
+
+
+
+    <div class="container-fluid py-5" id="products">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <!-- <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Skin Specialist</h6> -->
+                    <h2 class="mb-5">Our Products and Services</h2>
+                </div>
+            </div>
+            <section class="services-section">
+
+                <div class="service-item">
+                    <img src="static/img/solar-energy.gif" alt="Off Grid Plant">
+                    <h3>Off Grid Plant</h3>
+                    <p>
+                        It generates electricity independently of the main power grid, providing
+                        self-sustaining energy for remote or isolated locations.
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <img src="static/img/solar-battery.gif" alt="On Grid Plant">
+                    <h3>On Grid Plant</h3>
+                    <p>
+                        An on-grid panel connects solar energy systems to the main power grid,
+                        allowing for efficient energy distribution and consumption.
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <img src="static/img/wind-turbine-1.gif" alt="Hybrid Plant">
+                    <h3>Hybrid Plant</h3>
+                    <p>
+                        It combines on-grid and off-grid systems, utilizing both grid-connected
+                        electricity and self-sustained energy production.
+                    </p>
+                </div>
+
+                 <div class="service-item">
+                    <img src="static/img/license.gif" alt="Solar License and Commissioning">
+                    <h3>Stablizers</h3>
+                    <p>
+                        We have wide variety of Stabilizers home and commercials.
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <img src="static/img/conversation.gif" alt="Free Consultancy">
+                    <h3>Free Consultancy</h3>
+                    <p>
+                        We provide free expert advice on solar energy use, ensuring informed decisions tailored to your
+                        energy needs.
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <img src="static/img/visiting.gif" alt="Free Site Visit">
+                    <h3>Free Site Visit</h3>
+                    <p>
+                        A free site visit involves professionals or experts assessing a location in person without
+                        charging any fees for their service.
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <img src="static/img/repair-tools.gif" alt="Installation">
+                    <h3>Installation</h3>
+                    <p>
+                        Installation involves setting up  equipment or systems according to specifications, ensuring
+                        proper functioning and performance.
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <img src="static/img/mechanic.gif" alt="Annual Maintenance Contract">
+                    <h3>Annual Maintenance Contract</h3>
+                    <p>
+                        An Annual Maintenance Contract is a service agreement for regular upkeep and repair of equipment
+                        or systems.
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <img src="static/img/cleaning.gif" alt="Free Consultancy">
+                    <h3>Cleaning</h3>
+                    <p>
+                        Cleaning involves removing dirt, dust, and stains, ensuring hygiene, appearance, and maintenance
+                        of a clean environment.
+                    </p>
+                </div>
+
+
+
+            </section>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+
+    <h2 class="why-heading" id="whyus">WHY CHOOSE US</h2>
+
+
+
+    <div class="container-fluid  py-5">
+        <div class="container bg-custom rounded-4 p-4 p-md-5" style="background-color: #e6f7ff;">
+            <!-- Heading -->
+            <!-- ITEM 1 -->
+            <div class="timeline-item left">
+                <div class="timeline-icon">☀️</div>
+                <div class="timeline-content">
+                    <h3>Safe Rooftop Solar</h3>
+                    <p>Safe installations that withstand storms up to 180 kmph.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="timeline-item right">
+                <div class="timeline-icon">🛠️</div>
+                <div class="timeline-content">
+                    <h3>5-Year Annual Maintenance</h3>
+                    <p>Deep cleaning, health checks & repairs included.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="timeline-item left">
+                <div class="timeline-icon">🧽</div>
+                <div class="timeline-content">
+                    <h3>Free Solar Panel Cleaning</h3>
+                    <p>Complete cleaning & protection against dust/weather.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="timeline-item right">
+                <div class="timeline-icon">🔋</div>
+                <div class="timeline-content">
+                    <h3>Performance Warranty</h3>
+                    <p>Long-term performance guarantee on panels.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Testimonial End -->
+
+    <h2 class="why-heading" id="contactus">We’d Love to Hear From You</h2>
+    <div class="container-fluid  py-5">
+        <div class="container bg-custom rounded-4 p-4 p-md-5">
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                <h6 class="text-primary text-uppercase">Get In Touch</h6>
+                <p class="lead text-muted">Have questions or need more information? Our team is here to help.</p>
+            </div>
+
+            <!-- Map + Form -->
+            <div class="row g-4 align-items-stretch">
+                <!-- Map -->
+                <div class="col-lg-6">
+                    <div class="rounded-4 shadow-sm overflow-hidden h-100">
+                        <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=..." frameborder="0"
+                            style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <div
+                        class="bg-white rounded-4 shadow-sm p-4 p-lg-5 h-100 d-flex flex-column justify-content-center">
+                        <h2 class="mb-3 text-dark">Contact Us</h2>
+                        <p class="text-muted mb-4">Fill out the form below and we’ll get back to you as soon as
+                            possible.</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control form-control-lg rounded-3"
+                                    placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control form-control-lg rounded-3"
+                                    placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control form-control-lg rounded-3" placeholder="Subject"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control form-control-lg rounded-3" rows="4" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <button class="btn btn-primary btn-lg w-100 rounded-3">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info Boxes -->
+            <div class="row mt-5 g-4 text-center">
+                <div class="col-md-4">
+                    <div class="bg-white p-4 shadow-sm rounded-4 h-100">
+                        <i class="fa fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-2">Our Office</h5>
+                        <p class="mb-0">Vadodra, Gujarat, India-110019</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white p-4 shadow-sm rounded-4 h-100">
+                        <i class="fa fa-phone-alt fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-2">Call Us</h5>
+                        <p class="mb-0">+91 981099999<br>+91 000000000</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white p-4 shadow-sm rounded-4 h-100">
+                        <i class="fa fa-envelope fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-2">Email Us</h5>
+                        <p class="mb-0">gopi@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Optional: Custom style -->
+    <style>
+        .bg-custom {
+            background-color: #e3f6f5;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid position-relative bg-dark py-5" style="margin-top: 90px;">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6 pr-lg-5 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mb-3 text-white"><span class="text-primary">GRAVITY</span> POWERTECH</h1>
+                    </a>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Vadodra, Gujarat, India-110019</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+91 938949883, +91 0090390390</p>
+                    <p><i class="fa fa-envelope mr-2"></i>gopi@gmail.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square"
+                            href="https://www.instagram.com/"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-lg-5">
+                    <div class="row">
+                        <div class="col-sm-6 mb-5">
+                            <h5 class="text-white text-uppercase mb-4">Quick Links</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our
+                                    products</a>
+                                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact
+                                    Us</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-5">
+                            <h5 class="text-white text-uppercase mb-4">Our products</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Stabilizers</a>
+                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Solar Panels</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mb-5">
+                            <h5 class="text-white text-uppercase mb-4">Newsletter</h5>
+                            <div class="w-100">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-light" style="padding: 30px;"
+                                        placeholder="Your Email Address">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary px-4">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light border-top py-4"
+        style="border-color: rgba(256, 256, 256, .15) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0 text-white">&copy; <a href="#">Gravity Powertech</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0 text-white">Designed by Gravity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/waypoints/waypoints.min.js"></script>
+    <script src="static/lib/counterup/counterup.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="static/mail/jqBootstrapValidation.min.js"></script>
+    <script src="static/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="static/js/main.js"></script>
+
+
+</body>
+
+</html>

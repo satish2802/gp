@@ -73,6 +73,46 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="static/css/style.css" rel="stylesheet">
 
+    <style>
+@media (max-width: 768px) {
+  body { overflow-x: hidden; }
+
+  #about, .about, .about-section {
+    padding: 20px 15px !important;
+  }
+
+  #about .row, 
+  .about .row,
+  .about-section .row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #about img,
+  .about img,
+  .about-section img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 15px;
+  }
+
+  #about h2,
+  .about h2,
+  .about-section h2 {
+    font-size: 22px !important;
+    text-align: center;
+  }
+
+  #about p,
+  .about p,
+  .about-section p {
+    font-size: 15px !important;
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+</style>
+
 
 
 </head>

@@ -73,51 +73,107 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="static/css/style.css" rel="stylesheet">
 
- <style>
-/* ===== MOBILE ABOUT SECTION FIX ===== */
+<style>
+/* ===== OUR STORY SECTION (FINAL) ===== */
+
+#about-section {
+  padding: 4rem 3rem;
+}
+
+/* Desktop layout */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: #C7EDCC;
+  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25));
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  color: #1B3B1B;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Image */
+.about-image {
+  flex-shrink: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+  width: 280px;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Text */
+.about-content h5 {
+  font-size: 1.1rem;
+  color: #2B5F2B;
+  margin-bottom: 0.5rem;
+}
+
+.about-content h5 strong {
+  color: #0D290D;
+}
+
+.about-content h2 {
+  font-size: 2.4rem;
+  color: #0D290D;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.about-content ul {
+  padding-left: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ===== MOBILE FIX (SAFE & ISOLATED) ===== */
 @media (max-width: 768px) {
 
-  body {
-    overflow-x: hidden;
+  #about-section {
+    padding: 1.5rem 1rem;
   }
 
-  /* Force single column */
-  .about .row {
-    display: block !important;
+  .about-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
   }
 
-  .about .col,
-  .about .col-md-6 {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  /* Image fix */
-  .about img {
+  .about-image img {
     width: 100%;
-    height: 260px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 15px;
   }
 
-  /* Text readability */
-  .about h2 {
-    font-size: 22px;
+  .about-content h5 {
+    font-size: 0.95rem;
     text-align: center;
   }
 
-  .about p {
-    font-size: 15.5px;
-    line-height: 1.7;
-    padding: 0 5px;
-    text-align: left;
+  .about-content h2 {
+    font-size: 1.6rem;
+    text-align: center;
   }
 
-  /* WhatsApp button fix */
-  .whatsapp-float {
-    bottom: 20px;
-    right: 15px;
+  .about-content p,
+  .about-content ul {
+    font-size: 0.95rem;
   }
 }
 </style>
@@ -348,60 +404,50 @@
     <!-- Carousel End -->
 
 
-    <!-- Our Story Start -->
-    <div style="display: flex; align-items: center; gap: 4rem; padding: 4rem 3rem; 
-           background-color: #C7EDCC; 
-           background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)); /* subtle dark overlay */
-           border-radius: 20px; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15); 
-           color: #1B3B1B; font-family: 'Segoe UI', sans-serif;">
+   <!-- Our Story Start -->
+<section id="about-section">
+  <div class="about-container">
 
-        <!-- Image Section -->
-        <div style="flex-shrink: 0; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
-        transition: transform 0.3s ease;">
-            <img src="static/img/aboutus.jpg" alt="Gravity Powertech"
-                style="width: 280px; height: auto; object-fit: cover; display: block; border-radius: 15px; transition: transform 0.3s ease;"
-                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-
-        <!-- Text Section -->
-        <div style="flex: 1;">
-            <h5 style="font-size: 1.1rem; color: #2B5F2B; margin-bottom: 0.5rem;">
-                Welcome to <strong style="color: #0D290D;">Gravity Powertech</strong>: Powering Homes. Powering
-                Progress.
-            </h5>
-
-            <h2 style="font-size: 2.4rem; color: #0D290D; font-weight: 700; margin-bottom: 1rem;">Our Story</h2>
-
-            <p style="font-size: 1.05rem; color: #1B3B1B; line-height: 1.8; margin-bottom: 1.2rem;">
-                Gravity Powertech is a Gujarat-based company dedicated to delivering reliable and sustainable energy
-                solutions.
-                We specialize in solar panel installation, solar maintenance and services, and high-quality Stabilizers
-                manufacturing.
-                With a commitment to innovation and customer satisfaction, we bring clean energy solutions to homes,
-                businesses,
-                and industries across India.
-                <br><br>
-                Our mission is to make renewable energy accessible, efficient, and long-lasting. With years of
-                experience and a
-                team of expert engineers, Gravity Powertech ensures top-notch installation quality, premium components,
-                and timely
-                support — all backed by a trusted legacy of power excellence.
-            </p>
-
-            <ul style="color: #1B3B1B; padding-left: 1.5rem; font-size: 1.05rem; line-height: 1.7;">
-                <li><strong>Specialists in Solar Installation & Maintenance Services</strong></li>
-                <li><strong>Manufacturers of reliable and high-performance Stabilizers</strong></li>
-                <li><strong>Committed to delivering sustainable and cost-effective energy solutions</strong></li>
-                <li><strong>Trusted by thousands across Gujarat and other Indian states</strong></li>
-            </ul>
-        </div>
-
+    <!-- Image Section -->
+    <div class="about-image">
+      <img src="static/img/aboutus.jpg" alt="Gravity Powertech">
     </div>
 
+    <!-- Text Section -->
+    <div class="about-content">
+      <h5>
+        Welcome to <strong>Gravity Powertech</strong>: Powering Homes. Powering Progress.
+      </h5>
 
+      <h2>Our Story</h2>
 
+      <p>
+        Gravity Powertech is a Gujarat-based company dedicated to delivering reliable and sustainable energy
+        solutions.
+        We specialize in solar panel installation, solar maintenance and services, and high-quality Stabilizers
+        manufacturing.
+        With a commitment to innovation and customer satisfaction, we bring clean energy solutions to homes,
+        businesses,
+        and industries across India.
+        <br><br>
+        Our mission is to make renewable energy accessible, efficient, and long-lasting. With years of
+        experience and a
+        team of expert engineers, Gravity Powertech ensures top-notch installation quality, premium components,
+        and timely
+        support — all backed by a trusted legacy of power excellence.
+      </p>
 
+      <ul>
+        <li><strong>Specialists in Solar Installation & Maintenance Services</strong></li>
+        <li><strong>Manufacturers of reliable and high-performance Stabilizers</strong></li>
+        <li><strong>Committed to sustainable and cost-effective energy solutions</strong></li>
+        <li><strong>Trusted by thousands across Gujarat and India</strong></li>
+      </ul>
+    </div>
 
+  </div>
+</section>
+<!-- Our Story End -->
 
 
     <!-- our Product start -->

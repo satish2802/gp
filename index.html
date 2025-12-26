@@ -73,46 +73,54 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="static/css/style.css" rel="stylesheet">
 
-    <style>
+ <style>
+/* ===== MOBILE ABOUT SECTION FIX ===== */
 @media (max-width: 768px) {
-  body { overflow-x: hidden; }
 
-  #about, .about, .about-section {
-    padding: 20px 15px !important;
+  body {
+    overflow-x: hidden;
   }
 
-  #about .row, 
-  .about .row,
-  .about-section .row {
-    display: flex !important;
-    flex-direction: column !important;
+  /* Force single column */
+  .about .row {
+    display: block !important;
   }
 
-  #about img,
-  .about img,
-  .about-section img {
+  .about .col,
+  .about .col-md-6 {
     width: 100% !important;
-    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* Image fix */
+  .about img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
     margin-bottom: 15px;
   }
 
-  #about h2,
-  .about h2,
-  .about-section h2 {
-    font-size: 22px !important;
+  /* Text readability */
+  .about h2 {
+    font-size: 22px;
     text-align: center;
   }
 
-  #about p,
-  .about p,
-  .about-section p {
-    font-size: 15px !important;
-    line-height: 1.6;
-    text-align: justify;
+  .about p {
+    font-size: 15.5px;
+    line-height: 1.7;
+    padding: 0 5px;
+    text-align: left;
+  }
+
+  /* WhatsApp button fix */
+  .whatsapp-float {
+    bottom: 20px;
+    right: 15px;
   }
 }
 </style>
-
 
 
 </head>
